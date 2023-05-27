@@ -1,0 +1,36 @@
+.post__wrapper {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.post__content {
+    width: 320px;
+    display: flex;
+    margin-right: 15px;
+}
+
+.post__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post__text {
+    font-size: 14px;
+    color: #0f0caf;
+}
+
+.post__like {
+    margin-right: 10px;
+}
+
+.button {
+    background-color: rgb(80, 80, 177);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.profileInfo__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 75px;
+    position: relative;
+    font-size: 10px;
+    background-color: #d8b7f3;
+}
+
+.profileInfo__wallpaper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.profileInfo__avatar {
+    width: 100px;
+    height: 150px;
+    z-index: 1;
+}
+
+.profileInfo__content {
+    width: 100px;
+}
+
+.profileInfo__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileInfo__contacts ul{
+    padding: 0;
+    margin: 0;
+}
+
+.profileInfo__contacts li{
+    margin: 0;
+    list-style-type: none;   
+}

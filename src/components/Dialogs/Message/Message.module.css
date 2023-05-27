@@ -1,0 +1,11 @@
+.message__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+} 
+
+.message__avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

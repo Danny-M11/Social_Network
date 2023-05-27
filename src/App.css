@@ -1,0 +1,16 @@
+.app_wrapper {
+  display: grid;
+  width: 960px;
+  grid-template: 35px 1fr / 1fr 4fr;
+  grid-template-areas: 
+  "header header"
+  "sidebar main-content"
+  ;
+
+  margin: 0 auto;
+}
+
+.app_wrapper__content {
+    grid-area: main-content;
+    background-color: #bd9ada;
+}

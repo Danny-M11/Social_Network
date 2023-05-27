@@ -1,0 +1,37 @@
+.newMessageForm__wrapper {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.newMessageForm__input {
+    width: 300px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.newMessageForm__input:focus {
+    outline: 1px solid #5050b1;
+}
+
+.newMessageForm__button {
+    width: 75px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #5050b1;
+    color: #fff;
+}
+
+.newMessageForm__button:hover {
+    background-color: #f7f31e;
+    color: #5050b1;
+}
+
+.newMessageForm__button:active {
+    background-color: #f3f0a5;
+    color: #5050b1;
+}

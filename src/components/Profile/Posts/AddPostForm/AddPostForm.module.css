@@ -1,0 +1,40 @@
+.addPostForm__wrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addPostForm__textarea {
+    width: 300px;
+    height: 75px;
+    resize: none;
+    padding: 5px;
+    margin: 0;
+    border-radius: 15px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.addPostForm__textarea:focus {
+    outline: 1px solid #5050b1;
+}
+
+.addPostForm__button {
+    width: 300px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #5050b1;
+    color: #fff;
+}
+
+.addPostForm__button:hover {
+    background-color: #f7f31e;
+    color: #5050b1;
+}
+
+.addPostForm__button:active {
+    background-color: #f3f0a5;
+    color: #5050b1;
+}

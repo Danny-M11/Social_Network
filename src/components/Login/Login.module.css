@@ -1,0 +1,18 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+}
+
+.loginForm__field {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 8px;
+}
