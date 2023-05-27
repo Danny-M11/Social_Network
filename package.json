@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://danny-m11.github.io/SocialNetwork/",
+  "homepage": "https://danny-m11.github.io/Social_Network/",
   "jest": {
     "transformIgnorePatterns": [
       "node_modules/(?!axios)/"
