@@ -9,7 +9,7 @@ const User = (props) => {
 
     return (
         <div className={cls.user__wrapper}>
-            <NavLink to={'/profile/' + props.id}><img className={cls.user__avatar} src={!props.photo ? userAva : props.photo} alt="аватар пользователя" /></NavLink >
+            <NavLink to={'/userProfile/' + props.id}><img className={cls.user__avatar} src={!props.photo ? userAva : props.photo} alt="аватар пользователя" /></NavLink >
             <span className={cls.user__name}>{props.name}</span>
             <div className={cls.user__location}>
                 <span className={cls.user__city}>{props.city}</span>

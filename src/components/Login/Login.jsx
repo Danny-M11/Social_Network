@@ -36,8 +36,9 @@ const LoginForm = (props) => {
     const formik = useFormik({
         initialValues,
         onSubmit: values => {
+            console.log(values)
             let rememberMe = false
-            if (!values.rememberMe === null) {rememberMe = true}
+            if (values.rememberMe !== null) {rememberMe = true}
             props.login(values.email, values.password, rememberMe) //чек-бокс возвращает в качестве ответа массив со значением он или ничего. Если в массиве лежит значенике - значит в запрос передавать true, если нет, значит false
         },
         validate

@@ -7,7 +7,6 @@ import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-console.log(process.env.PUBLIC_URL)
 root.render(
     <HashRouter>
         <Provider store = {store}>
@@ -15,13 +14,6 @@ root.render(
         </Provider>
     </HashRouter>
 );
-
-
-
-
-
-
-
 
 // rerenderEntiretree(store.getState());
 

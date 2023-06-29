@@ -44,6 +44,7 @@ class App extends React.Component {
               <Route path='/settings' element={<Settings />} />
               <Route path='/users' element={<UsersComponent />} />
               <Route path='/login' element={<Login />} />
+              <Route path='/userProfile/:userId' element={<ProfileComponent />} />
             </Routes>
           </Suspense >
         </div>

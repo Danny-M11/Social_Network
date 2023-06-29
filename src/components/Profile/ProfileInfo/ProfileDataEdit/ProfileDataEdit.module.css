@@ -1,0 +1,31 @@
+.edit_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_form__item {
+    display: grid;
+    grid-template: 20px minmax(5px, max-content) / 100px 300px;
+    grid-template-areas: 
+    "label input"
+    ". error"
+    ;
+}
+
+.edit_form__label {
+    grid-area: label;
+    align-self: center;
+}
+
+.edit_form__input {
+    grid-area: input;
+}
+
+.edit_form__checkbox {
+    justify-self: start;
+}
+
+.error {
+    grid-area: error;
+    color: red;
+}

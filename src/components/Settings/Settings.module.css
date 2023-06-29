@@ -1,0 +1,32 @@
+.settings__background_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #75727298;
+    z-index: 1;
+}
+
+.change_photo__popup {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 400px;
+    height: 150px;
+    background-color: #a59090;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.popup__title {
+    margin-bottom: 20px;
+}
+.close_popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

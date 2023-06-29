@@ -46,6 +46,7 @@ export const getMainUser = () => {
 }
 
 export const login = (email, password, rememberMe) => {
+    console.log(rememberMe)
 
     return async (dispatch) => {
         let response = await profileAPI.login(email, password, rememberMe);

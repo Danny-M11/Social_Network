@@ -24,21 +24,6 @@
     z-index: 1;
 }
 
-.profileInfo__content {
-    width: 100px;
-}
-
-.profileInfo__contacts {
-    display: flex;
-    flex-direction: column;
-}
-
-.profileInfo__contacts ul{
-    padding: 0;
-    margin: 0;
-}
-
-.profileInfo__contacts li{
-    margin: 0;
-    list-style-type: none;   
+.profileInfo__download_button {
+    width: 200px;
 }

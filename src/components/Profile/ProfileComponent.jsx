@@ -1,22 +1,38 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { getUserProfile, setUserStatus, updateUserStatus } from '../../redux/ProfileReducer';
+import { getUserProfile, setUserStatus, updateUserStatus, updateProfileData } from '../../redux/ProfileReducer';
 import Profile from './Profile';
 import { withAuthNavigate } from '../../hoc/withAuthNavigate';
 import { WithRouter } from '../../hoc/withRouter';
 
 
 class ProfileContainer extends React.Component {
-    componentDidMount () {
+    refreshProfile () {
         let userId = this.props.router.params.userId||this.props.mainUserId;
         this.props.getUserProfile(userId);
         this.props.setUserStatus(userId);
     }
+
+    componentDidMount () {
+        this.refreshProfile()
+    }
+
+    componentDidUpdate (prevProps) {
+        if (this.props.router.params.userId !== prevProps.router.params.userId) {
+            this.refreshProfile()
+        }
+    }
     
     render() {
         return (
-            <Profile profileData={this.props.profileData} status={this.props.userStatus} updateStatus={this.props.updateUserStatus}/>
+            <Profile
+            profileData={this.props.profileData} 
+            status={this.props.userStatus} 
+            updateStatus={this.props.updateUserStatus}
+            updateProfileData={this.props.updateProfileData}
+            mainUserId={this.props.mainUserId}
+            />
         )
     }
 }
@@ -25,11 +41,11 @@ let mapStateToProps = (state) => {
     return {
         profileData : state.profileState.profileData,
         userStatus : state.profileState.status,
-        mainUserId : state.auth.id
+        mainUserId : state.auth.id,
     }
 }
 
-const ProfileComponent = compose(withAuthNavigate, WithRouter, connect(mapStateToProps, {getUserProfile, setUserStatus, updateUserStatus}))(ProfileContainer)
+const ProfileComponent = compose(withAuthNavigate, WithRouter, connect(mapStateToProps, {getUserProfile, setUserStatus, updateUserStatus, updateProfileData}))(ProfileContainer)
 
 export default ProfileComponent
 
